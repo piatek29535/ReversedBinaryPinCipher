@@ -20,7 +20,6 @@ public class GuiFormApplication extends JFrame{
     public void generateWindow(){
     /* Frame config */
 
-        frame.setVisible(true);
         frame.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
         frame.setLocation(screen.width/4,screen.height/4);
         frame.setSize(screen.width/2,screen.height/2);
@@ -30,7 +29,7 @@ public class GuiFormApplication extends JFrame{
 
     /* Panel edit */
         jPanel.setBackground(new Color(204,204,204));
-        jPanel.setLayout(new MigLayout("inset 30"));
+        jPanel.setLayout(new MigLayout());
         jPanel.add(jButton,"wrap");
         jPanel.add(jTextField1,"wrap");
         jPanel.add(jTextField2,"wrap");
@@ -50,6 +49,9 @@ public class GuiFormApplication extends JFrame{
             }
         });
 
+
+        // Set Visible musi być tutaj
+        frame.setVisible(true); // Żelazna zasada = nie używać setVisible() przed ładowaniem komponentów
 
     }
 
