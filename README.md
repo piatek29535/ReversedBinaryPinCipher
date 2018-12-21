@@ -15,7 +15,7 @@ Aplikacja odpowiadająca za zakodowanie numeru PIN pprzez wykorzystanie algorytm
 W aplikacji użyłem nastepujących zewnętrznych pakietów narzędziowych: <br /><br />
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **(GUI) MiGLayout** --> http://www.miglayout.com/ <br />
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **(GUI) XSwingX** --> https://code.google.com/archive/p/xswingx/ <br /><br />
-<hr />
+<hr /><br />
 # Zobacz także:
  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **Trello** --> https://trello.com/b/5VjxlSCZ <br />
  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **My Website** --> *<in_progress>*
