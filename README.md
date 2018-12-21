@@ -1,10 +1,11 @@
 # Reversed Binary Pin Cipher --- alpha 1.0
 
-## O aplikacji<br />
+### O aplikacji<br />
 Aplikacja odpowiadająca za zakodowanie numeru PIN pprzez wykorzystanie algorytmu odwrócenia liczby binarnej
 
-## Zasada działania<br />
-
+### Zasada działania<br />
+Sam szyfr opiera się jak wyżej wspomniane, na konwersji liczb z dziesiętnego systemu na binarne.
+Dodatkowo po konwersji wykonywana jest zamiana bitów lezących naprzeciw siebie.
 ## Zewnętrzne biblioteki
 W aplikacji użyłem nastepujących zewnętrznych pakietów narzędziowych: <br /><br />
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **(GUI) MiGLayout** --> http://www.miglayout.com/ <br />
