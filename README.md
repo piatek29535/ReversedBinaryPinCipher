@@ -11,7 +11,7 @@ Aplikacja odpowiadająca za zakodowanie numeru PIN pprzez wykorzystanie algorytm
 * W kolejnym kroku w nowej metodzie liczby binarne są rozdzielane na części,
 * Nastepnie poddawane są algorytmowi konwersji z systemu binarnego na dziesiętny
 * Na końcu zwracana jest liczba złożona z odpowiednio przekonwertowanych odwróconych liczb binarnych w wersji calkowitej<br />
-## Zewnętrzne biblioteki
+### Zewnętrzne biblioteki
 W aplikacji użyłem nastepujących zewnętrznych pakietów narzędziowych: <br /><br />
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **(GUI) MiGLayout** --> http://www.miglayout.com/ <br />
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **(GUI) XSwingX** --> https://code.google.com/archive/p/xswingx/ <br /><br />
