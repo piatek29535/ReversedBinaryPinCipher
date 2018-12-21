@@ -10,7 +10,7 @@ public class GuiFormApplication extends JFrame{
 
     JFrame frame = new JFrame();
     Dimension screen = Toolkit.getDefaultToolkit().getScreenSize();
-
+    Converter converter;
     //Components
     JPanel jPanel = new JPanel();
     JButton jButton = new JButton("Wykonaj!");
@@ -51,11 +51,17 @@ public class GuiFormApplication extends JFrame{
         // ------------------------------------------------------------------------------------------------
 
         jButton.addActionListener( e -> {
-            if(jTextField1.getText().equals("")){
-                JOptionPane.showMessageDialog(null,"Nie podałeś PIN-u");
+            if(jComboBox.getSelectedIndex() == 0) {
+                if (jTextField1.getText().equals("")) {
+                    JOptionPane.showMessageDialog(null, "Nie podałeś PIN-u");
+                } else {
+                    JOptionPane.showMessageDialog(null, "Twoj pin to: " + jTextField1.getText());
+                    converter = new Converter(jTextField1.getText());
+                    jTextField2.setText(converter.toDecReversed());
+                    jTextField1.setText("");
+                }
             }else{
-                JOptionPane.showMessageDialog(null,"Twoj pin to: "+jTextField1.getText());
-                jTextField1.setText(null);
+                JOptionPane.showMessageDialog(null, "Do zrobienia");
             }
         });
 
@@ -89,15 +95,16 @@ public class GuiFormApplication extends JFrame{
         // ---> JLabelTitle
         // ------------------------------------------------------------------------------------------------
 
-        jLabelTitle.setFont(new Font("Serif", Font.BOLD, 40));
+            jLabelTitle.setFont(new Font("Serif", Font.BOLD, 40));
+
         // ---> JComboBox
         // ------------------------------------------------------------------------------------------------
-        jComboBox.addItem("Szyfruj");
-        jComboBox.addItem("Deszyfruj");
+            jComboBox.addItem("Szyfruj");
+            jComboBox.addItem("Deszyfruj");
 
         // ------------------------------------------------------------------------------------------------
         // Set Visible musi być tutaj (ładowanie komponentów musi być wcześniej niż setVisible())
-        frame.setVisible(true);
+            frame.setVisible(true);
     }
 
     public static void main(String[] args) {
